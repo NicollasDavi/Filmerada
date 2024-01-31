@@ -1,0 +1,12 @@
+/* Seu arquivo de estilos (por exemplo, styles.css) */
+
+/* Estilo padrão do paginador */
+.swiper-pagination-bullet {
+    background-color: red; /* Altere a cor conforme necessário */
+  }
+  
+  /* Estilo do paginador ativo (quando está na página atual) */
+  .swiper-pagination-bullet-active {
+    background-color: blue; /* Altere a cor conforme necessário */
+  }
+  

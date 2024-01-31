@@ -1,6 +1,7 @@
 /* eslint-disable react/jsx-key */
 import { useState, useEffect } from "react";
 import MovieCard from "../components/MovieCard";
+import Carusel from "../components/Carussel";
 
 const moviesURL = import.meta.env.VITE_API;
 const apiKey = import.meta.env.VITE_API_KEY;
@@ -29,9 +30,7 @@ const Home = () => {
     return(
         <div className="container">
             <h2 className="title">Melhores Filmes:</h2>
-            <div className="movies-container">
-                {topMovies.length > 0 && topMovies.map((movie) => <MovieCard movie={movie}/>)}
-            </div>
+                <Carusel array={topMovies}/>
         </div>
         
     )
