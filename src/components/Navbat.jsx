@@ -14,8 +14,6 @@ const Navbar = () => {
                 <BiSearchAlt2/>
             </button>
         </form>
-        <Link to="/movie/:id" className={styles.link}>Filmes</Link>
-        <Link to="/search">Search</Link>
       </nav>
   )
 }

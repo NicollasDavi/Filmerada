@@ -1,12 +1,28 @@
-/* Seu arquivo de estilos (por exemplo, styles.css) */
+/* Carussel.model.css */
 
-/* Estilo padrão do paginador */
+/* Estilos para a paginação clicável do Swiper */
+.swiper-pagination-clickable {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px; /* Ajuste conforme necessário */
+}
+
 .swiper-pagination-bullet {
-    background-color: red; /* Altere a cor conforme necessário */
-  }
-  
-  /* Estilo do paginador ativo (quando está na página atual) */
-  .swiper-pagination-bullet-active {
-    background-color: blue; /* Altere a cor conforme necessário */
+  width: 10px;
+  height: 10px;
+  background-color: #6a0dad;
+  margin: 0 5px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #fff;
+}
+
+
+  .carusel{
+    width: 80%;
   }
   
