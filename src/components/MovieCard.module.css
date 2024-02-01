@@ -22,22 +22,30 @@
     -moz-box-shadow: -1px 2px 37px 17px rgba(106,13,173,0.47);
 }
 
+.movie_card img:hover + .circle,
+.movie_card img:hover + .circle p{
+    transform: scale(1.1);
+    color: gold;
+}
+
 .circle {
     position: absolute;
     background-color: #6a0dad;
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    top: 0;
+    top: 8px;
     left: 0;
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: all .5s;
 }
 
 .circle p {
     color: #fff;
     text-align: center;
+    transition: all .5s;
 }
 
 
