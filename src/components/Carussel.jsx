@@ -14,7 +14,6 @@ function Carusel ({array}){
         <div >
             <Swiper 
             slidesPerView={6}
-            pagination={{clickable: true}}
             navigation
             >
                
