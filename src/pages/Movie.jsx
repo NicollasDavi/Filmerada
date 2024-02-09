@@ -6,10 +6,11 @@ import {BsGraphUp} from "react-icons/bs"
 import "./Movie.css"
 
 
-import MovieCard from "../components/MovieCard";
 
 const moviesURL = import.meta.env.VITE_API;
 const apiKey = import.meta.env.VITE_API_KEY;
+const imageUrl = import.meta.env.VITE_IMG
+
 
 
 const Movie = () => {
@@ -29,8 +30,15 @@ const Movie = () => {
     }, [])
 
     return(
-        <div>
-            {movie && <>{movie.title} <MovieCard movie={movie}/></>}
+        <div className="MoviesContain">
+            <div>
+                <section>
+                    {movie && <><img src={imageUrl + movie.poster_path} alt="" /> </>}
+                </section>
+                <section>
+                    {movie && <>{movie.title}</>}
+                </section>
+            </div>
             
         </div>
     )

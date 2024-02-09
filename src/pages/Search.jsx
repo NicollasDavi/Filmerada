@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { useSearchParams } from "react-router-dom";
 import MovieCard from "../components/MovieCard";
+import styles from "./Searcg.module.css"
 
 const searchURL = import.meta.env.VITE_SEARCH
 const apiKey = import.meta.env.VITE_API_KEY
@@ -28,9 +29,9 @@ const Search = () => {
 
     
     return(
-        <div>
+        <div className={styles.DataCard}>
             <h2>Resultados para : <span>{query}</span></h2>
-            <div>
+            <div className={styles.MoviesCard}>
                 {movies.length > 0 &&
                 movies.map((movie) => <MovieCard key={movie.id} movie={movie}/>)}
             </div>

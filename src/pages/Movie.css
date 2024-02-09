@@ -1,0 +1,12 @@
+.MoviesContain{
+    width: 80vw;
+    margin: auto;
+}
+
+.MoviesContain div img{
+    width: 50%;
+}
+
+.MoviesContain div{
+    display: flex;
+}

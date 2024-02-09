@@ -1,0 +1,10 @@
+.DataCard {
+    margin: auto;
+    width: 80vw;
+}
+
+.MoviesCard{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
